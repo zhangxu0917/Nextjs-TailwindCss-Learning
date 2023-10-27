@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-2;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h2 {
+    @apply mb-2 text-xl font-semibold;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-purple-600 transition;
+  }
+
+  input[type="date"] {
+    @apply p-1 mb-1 border border-slate-300 rounded-sm outline-none;
+  }
+
+  .btn {
+    @apply px-4 py-3 rounded-lg transition duration-300 hover:opacity-60;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white transition duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-purple-600 text-white;
+  }
+
+  select {
+    @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded-lg pr-8;
+  }
 }
