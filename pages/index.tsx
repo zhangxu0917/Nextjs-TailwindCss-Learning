@@ -16,8 +16,14 @@ export default function Home() {
         <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
           <Link href="/typography">Typography</Link>
         </li>
-        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg">
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
           <Link href="/sizing">Sizing</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/layout-position">Layout & Position</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg">
+          <Link href="/backgrounds-shadows">Backgrounds & Shadows</Link>
         </li>
       </ul>
     </>
