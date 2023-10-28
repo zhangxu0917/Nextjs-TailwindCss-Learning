@@ -1,6 +1,12 @@
+import Head from "next/head";
+
 const Colors = () => {
   return (
     <>
+      <Head>
+        <title>Colors</title>
+      </Head>
+
       {/* Text Colors */}
       <div>
         <h2>Text Colors</h2>

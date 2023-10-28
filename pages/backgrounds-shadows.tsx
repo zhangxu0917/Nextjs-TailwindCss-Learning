@@ -17,7 +17,7 @@ const BackgroundsAndShadows = () => {
           <div
             className="h-64 w-72 bg-no-repeat bg-cover"
             style={{
-              backgroundImage: "url('/images/img1.jpeg')",
+              backgroundImage: "url('/images/img1.jpg')",
             }}
           ></div>
 

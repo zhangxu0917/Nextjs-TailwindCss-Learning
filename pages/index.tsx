@@ -22,8 +22,36 @@ export default function Home() {
         <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
           <Link href="/layout-position">Layout & Position</Link>
         </li>
-        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg">
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
           <Link href="/backgrounds-shadows">Backgrounds & Shadows</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/borders">Borders & Border Radius</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/filters">Filters</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/interactivity">Interactivity</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/breakpoint">Breakpoint Classes & Media Queries</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/columns">Columns</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/flexbox">Flexbox</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/grid">Grid</Link>
+        </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/transition-transform">Transition & Transform</Link>
+        </li>
+
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/animation">Animation Classes & Keyframes</Link>
         </li>
       </ul>
     </>

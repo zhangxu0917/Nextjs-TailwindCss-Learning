@@ -129,7 +129,7 @@ const LayoutAndPositionPage = () => {
         <div className="w-1/2">
           <img
             className="float-left m-4 w-48"
-            src="/images/img1.jpeg"
+            src="/images/img1.jpg"
             alt="It's a MacBook Pro"
           />
           <span>

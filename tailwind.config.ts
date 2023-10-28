@@ -16,6 +16,16 @@ const config: Config = {
       colors: {
         vuejs: "#13c927",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+        wiggle: "wiggle 1s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-20deg)" },
+          "50%": { transform: "rotate(20deg)" },
+        },
+      },
     },
   },
   plugins: [],
