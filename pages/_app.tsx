@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const noLayoutPages = [
     "/mini-projects/email-subscribe",
     "/mini-projects/pricing-grids",
+    "/mini-projects/product-modal",
   ];
 
   return (
