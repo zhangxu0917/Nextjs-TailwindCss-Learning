@@ -5,7 +5,10 @@ import { usePathname } from "next/navigation";
 
 export default function App({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
-  const noLayoutPages = ["/mini-projects/email-subscribe"];
+  const noLayoutPages = [
+    "/mini-projects/email-subscribe",
+    "/mini-projects/pricing-grids",
+  ];
 
   return (
     <>
