@@ -53,6 +53,10 @@ export default function Home() {
         <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
           <Link href="/animation">Animation Classes & Keyframes</Link>
         </li>
+
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/dark-mode">Dark Mode</Link>
+        </li>
       </ul>
     </>
   );
