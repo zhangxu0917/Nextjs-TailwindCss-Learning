@@ -9,6 +9,8 @@ export default function App({ Component, pageProps }: AppProps) {
     "/mini-projects/email-subscribe",
     "/mini-projects/pricing-grids",
     "/mini-projects/product-modal",
+    "/mini-projects/image-gallery",
+    "/mini-projects/login-modal",
   ];
 
   return (
