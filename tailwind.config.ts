@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         sans: ["Mulish", "sans-serif"],
         mono: ["Rokkitt", "monospace"],
+
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -20,6 +21,10 @@ const config: Config = {
       },
       colors: {
         vuejs: "#13c927",
+        strongCyan: "hsl(171, 66%, 44%)",
+        lightBlue: "hsl(233, 100%, 69%)",
+        darkGrayishBlue: "hsl(210, 10%, 33%)",
+        grayishBlue: "hsl(201, 11%, 66%)",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

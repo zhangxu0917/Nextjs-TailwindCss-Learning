@@ -30,6 +30,11 @@ export default function Home() {
             Mini Project 05 - Login Modal
           </Link>
         </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/mini-projects/clipboard-website">
+            Mini Project 06 - Clipboard Website
+          </Link>
+        </li>
       </ul>
     </>
   );
