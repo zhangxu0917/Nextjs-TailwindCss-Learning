@@ -35,6 +35,11 @@ export default function Home() {
             Mini Project 06 - Clipboard Website
           </Link>
         </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/mini-projects/loopstudios">
+            Mini Project 07 - LoopStudios
+          </Link>
+        </li>
       </ul>
     </>
   );

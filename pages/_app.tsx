@@ -12,6 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
     "/mini-projects/image-gallery",
     "/mini-projects/login-modal",
     "/mini-projects/clipboard-website",
+    "/mini-projects/loopstudios",
   ];
 
   return (

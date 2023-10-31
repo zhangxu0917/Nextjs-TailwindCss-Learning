@@ -12,7 +12,11 @@ const config: Config = {
       fontFamily: {
         sans: ["Mulish", "sans-serif"],
         mono: ["Rokkitt", "monospace"],
-
+        josefinSans: ["'Josefin Sans'", "sans-serif"],
+        alata: ["'Alata'"],
+      },
+      letterSpacing: {
+        loopStudiosWidest: '.3rem',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
