@@ -1,5 +1,9 @@
+import { useState } from "react";
 import classes from "./index.module.css";
 const LoopStudios = () => {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const menuDisplayClass = menuIsOpen ? "flex" : "hidden";
+
   return (
     <div className={`${classes["outter-container"]}`}>
       {/* Hero Section */}
@@ -43,7 +47,10 @@ const LoopStudios = () => {
               <button
                 id="menu-btn"
                 type="button"
-                className={`${classes.hamburger} ${classes.open} z-40 block  md:hidden focus:outline-none`}
+                className={`${classes.hamburger} ${
+                  menuIsOpen ? classes.open : ""
+                } z-40 block  md:hidden focus:outline-none`}
+                onClick={() => setMenuIsOpen(!menuIsOpen)}
               >
                 <span className={classes["hamburger-top"]}></span>
                 <span className={classes["hamburger-middle"]}></span>
@@ -52,7 +59,27 @@ const LoopStudios = () => {
             </div>
           </nav>
 
-          {/* @todo - Mobile Menu  */}
+          {/* Mobile Menu  */}
+          <div
+            id="menu"
+            className={`absolute top-0 bottom-0 left-0 right-0 flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-whtie uppercase bg-black ${menuDisplayClass}`}
+          >
+            <a href="" className="hover:text-pink-500">
+              About
+            </a>
+            <a href="" className="hover:text-pink-500">
+              Careers
+            </a>
+            <a href="" className="hover:text  -pink-500">
+              Events
+            </a>
+            <a href="" className="hover:text-pink-500">
+              Products
+            </a>
+            <a href="" className="hover:text-pink-500">
+              Support
+            </a>
+          </div>
 
           <div className="max-w-lg mt-32 mb-32 p-4 font-josefinSans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
             Impressive Experiences that deliver
