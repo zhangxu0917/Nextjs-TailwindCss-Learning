@@ -40,6 +40,11 @@ export default function Home() {
             Mini Project 07 - LoopStudios
           </Link>
         </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/mini-projects/shortly">
+            Mini Project 08 - Shortly Website
+          </Link>
+        </li>
       </ul>
     </>
   );

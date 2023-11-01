@@ -14,9 +14,13 @@ const config: Config = {
         mono: ["Rokkitt", "monospace"],
         josefinSans: ["'Josefin Sans'", "sans-serif"],
         alata: ["'Alata'"],
+        "shortly-sans": ["'Poppins'", "sans-serif"],
+      },
+      spacing: {
+        180: "32rem",
       },
       letterSpacing: {
-        loopStudiosWidest: '.3rem',
+        loopStudiosWidest: ".3rem",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -29,6 +33,15 @@ const config: Config = {
         lightBlue: "hsl(233, 100%, 69%)",
         darkGrayishBlue: "hsl(210, 10%, 33%)",
         grayishBlue: "hsl(201, 11%, 66%)",
+        shortly: {
+          cyan: "hsl(180, 66%, 49%)",
+          cyanLight: "hs1(180, 66%, 69%)",
+          darkViolet: "hsl(257, 27%, 26%)",
+          red: "hsl(0, 87%, 67%)",
+          grayishViolet: "hsl(257, 7%, 63%)",
+          veryDarkBlue: "hsl(255, 11%, 22%)",
+          veryDarkViolet: "hsl(260, 8%, 14%) ",
+        },
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
@@ -44,4 +57,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
