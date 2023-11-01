@@ -45,6 +45,11 @@ export default function Home() {
             Mini Project 08 - Shortly Website
           </Link>
         </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/mini-projects/testimonial-grid">
+            Mini Project 09 - Testimonial Grid
+          </Link>
+        </li>
       </ul>
     </>
   );

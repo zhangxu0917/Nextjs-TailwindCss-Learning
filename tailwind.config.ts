@@ -15,6 +15,7 @@ const config: Config = {
         josefinSans: ["'Josefin Sans'", "sans-serif"],
         alata: ["'Alata'"],
         "shortly-sans": ["'Poppins'", "sans-serif"],
+        "testimonial-sans": ["Barlow Semi Condensed", "sans-serif"],
       },
       spacing: {
         180: "32rem",
@@ -55,7 +56,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
 
 export default config;
