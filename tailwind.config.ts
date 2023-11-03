@@ -18,6 +18,7 @@ const config: Config = {
         "testimonial-sans": ["Barlow Semi Condensed", "sans-serif"],
         "flyo-sans": ["Raleway", "sans-serif"],
         "fly-opensans": ["Open Sans", "sans-serif"],
+        "bookmark-sans": ["Rubik", "sans-serif"],
       },
       spacing: {
         180: "32rem",
@@ -37,6 +38,7 @@ const config: Config = {
           "url('/images/all-project-assets/fylo/bg-curvy-dark-mode.svg')",
         "curvy-light-mode":
           "url('/images/all-project-assets/fylo/bg-curvy-light-mode.svg')",
+        dots: "url(/images/all-project-assets/bookmark/bg-dots.svg)",
       },
       colors: {
         vuejs: "#13c927",
@@ -61,6 +63,12 @@ const config: Config = {
           accentCyan: "hsl(176, 68%, 64%)",
           accentBlue: "hsl(198, 60%, 50%)",
           lightRed: "hsl(0, 100%, 63%)",
+        },
+        bookmark: {
+          softBlue: "hsl(231, 69%, 60%)",
+          softRed: "hsl(0, 94%, 66%)",
+          grayishBlue: "hsl(229, 8%, 60%)",
+          veryDarkBlue: "hsl(229, 31%, 21%)",
         },
       },
       animation: {

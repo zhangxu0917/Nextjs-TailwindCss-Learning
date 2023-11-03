@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
     "/mini-projects/shortly",
     "/mini-projects/testimonial-grid",
     "/mini-projects/fylo",
+    "/mini-projects/bookmark",
   ];
 
   return (
