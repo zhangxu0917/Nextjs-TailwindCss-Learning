@@ -50,6 +50,11 @@ export default function Home() {
             Mini Project 09 - Testimonial Grid
           </Link>
         </li>
+        <li className="p-2 bg-blue-100 border border-blue-400 rounded-lg mb-2">
+          <Link href="/mini-projects/fylo">
+            Mini Project 10 - Fylo Website With Color Picker
+          </Link>
+        </li>
       </ul>
     </>
   );

@@ -16,6 +16,8 @@ const config: Config = {
         alata: ["'Alata'"],
         "shortly-sans": ["'Poppins'", "sans-serif"],
         "testimonial-sans": ["Barlow Semi Condensed", "sans-serif"],
+        "flyo-sans": ["Raleway", "sans-serif"],
+        "fly-opensans": ["Open Sans", "sans-serif"],
       },
       spacing: {
         180: "32rem",
@@ -27,6 +29,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "logo-dark-mode":
+          "url('/images/all-project-assets/fylo/logo-dark-mode.svg')",
+        "logo-light-mode":
+          "url('/images/all-project-assets/fylo/logo-light-mode.svg')",
+        "curvy-dark-mode":
+          "url('/images/all-project-assets/fylo/bg-curvy-dark-mode.svg')",
+        "curvy-light-mode":
+          "url('/images/all-project-assets/fylo/bg-curvy-light-mode.svg')",
       },
       colors: {
         vuejs: "#13c927",
@@ -43,6 +53,15 @@ const config: Config = {
           veryDarkBlue: "hsl(255, 11%, 22%)",
           veryDarkViolet: "hsl(260, 8%, 14%) ",
         },
+        fylo: {
+          darkBlue: "hsl(217, 28%, 15%)",
+          darkBlue1: "hsl(218, 28%, 13%)",
+          darkBlue2: "hsl(216, 53%, 9%)",
+          darkBlue3: "hsl(219, 30%, 18%)",
+          accentCyan: "hsl(176, 68%, 64%)",
+          accentBlue: "hsl(198, 60%, 50%)",
+          lightRed: "hsl(0, 100%, 63%)",
+        },
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
@@ -54,6 +73,11 @@ const config: Config = {
           "50%": { transform: "rotate(20deg)" },
         },
       },
+    },
+  },
+  variables: {
+    extend: {
+      backgroundImage: ["dark"],
     },
   },
   plugins: [require("@tailwindcss/line-clamp")],
