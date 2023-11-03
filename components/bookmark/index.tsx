@@ -3,6 +3,8 @@ import classes from "./index.module.css";
 
 const BookMark = () => {
   const [activeTab, setActtiveTab] = useState("SimpleBookmarking");
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <>
       <div
@@ -14,7 +16,11 @@ const BookMark = () => {
             {/* Logo */}
             <div className="z-30">
               <img
-                src="/images/all-project-assets/bookmark/logo-bookmark.svg"
+                src={
+                  menuIsOpen
+                    ? "/images/all-project-assets/bookmark/logo-bookmark-footer.svg"
+                    : "/images/all-project-assets/bookmark/logo-bookmark.svg"
+                }
                 alt=""
                 id="logo"
               />
@@ -37,8 +43,60 @@ const BookMark = () => {
             </div>
 
             {/* TODO: Hamburger Button */}
+            <button
+              id="menu-btn"
+              className={`${classes.hamburger} ${
+                menuIsOpen ? classes.open : ""
+              } z-30 block md:hidden focus:outline-none`}
+              onClick={() => {
+                setMenuIsOpen(!menuIsOpen);
+              }}
+            >
+              <span className={classes["hamburger-top"]}></span>
+              <span className={classes["hamburger-middle"]}></span>
+              <span className={classes["hamburger-bottom"]}></span>
+            </button>
           </div>
           {/* TODO: Mobile Menu */}
+          <div
+            id="menu"
+            className={`${
+              menuIsOpen ? "flexed" : "hidden"
+            } inset-0 z-20 flexed flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-bookmark-veryDarkBlue fixed`}
+          >
+            <div className="w-full py-3 text-center">
+              <a
+                href="#feature"
+                className="block hover:text-bookmark-softRed text-white"
+              >
+                Features
+              </a>
+            </div>
+            <div className="w-full py-3 text-center">
+              <a
+                href="#download"
+                className="block hover:text-bookmark-softRed text-white"
+              >
+                Download
+              </a>
+            </div>
+            <div className="w-full py-3 text-center">
+              <a
+                href="#faq"
+                className="block hover:text-bookmark-softRed text-white"
+              >
+                FAQ
+              </a>
+            </div>
+            <div className="w-full py-3 text-center">
+              <a
+                href="#"
+                className="block hover:text-bookmark-softRed text-white"
+              >
+                Login
+              </a>
+            </div>
+          </div>
         </nav>
 
         {/* Hero Section */}
